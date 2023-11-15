@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passengers</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body> 
+    <h1>Passengers List:</h1>
+    {% if passengers %}    
+    <table>
+        <thead>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>email</th>
+            <th>rewardPoints</th>
+        </thead>
+        {% for pass in passengers %}
+    <tr>
+        <td>{{pass.firstName}}</td>
+        <td>{{pass.lastName}}</td>
+        <td>{{pass.email}}</td>
+        <td>{{pass.rewardPoints}}</td>
+    </tr>
+    {% endfor %}
+    </table>
+    {% else %}
+    <p>No records found</p>
+    {% endif %}
+</body>
+</html>
