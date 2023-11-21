@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'clinicalsApp',
 ]
 
 MIDDLEWARE = [
@@ -81,7 +82,6 @@ DATABASES = {
         'PASSWORD' : 'test123',
         'HOST' : '127.0.0.1',
         'PORT' : '3306',
-
     }
 }
 
