@@ -10,15 +10,15 @@ class PatientListView(ListView):
 class PatientCreateView(CreateView):
     model = Patient
     success_url = reverse_lazy('index')
-    fields = ('firstname', 'lastName','age')
+    fields = ('firstName', 'lastName','age')
 
 
 class PatientUpdateView(UpdateView):
     model = Patient
     success_url = reverse_lazy('index')
-    fields = ('firstname', 'lastName','age')
+    fields = ('firstName', 'lastName','age')
 
 class PatientDeleteView(DeleteView):
     model = Patient
     success_url = reverse_lazy('index')
-    fields = ('firstname', 'lastName','age')
+    fields = ('firstName', 'lastName','age')
