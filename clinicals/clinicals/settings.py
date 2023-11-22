@@ -80,7 +80,7 @@ DATABASES = {
         'NAME': 'clinicalsdb',
         'USER' : 'root',
         'PASSWORD' : 'test123',
-        'HOST' : '127.0.0.1',
+        'HOST' : 'django-mysql',
         'PORT' : '3306',
     }
 }
